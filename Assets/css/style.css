@@ -1,0 +1,16 @@
+body
+{
+    background: rgb(131, 126, 119);
+}
+#Header a:hover
+{
+    color: cadetblue;
+}
+
+#BackG-img
+{
+   background: url("../Images/BackG.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   min-height: 750px;
+}

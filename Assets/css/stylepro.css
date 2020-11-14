@@ -1,0 +1,16 @@
+body
+{
+    background: burlywood;
+}
+#Header a:hover
+{
+    color: cadetblue;
+}
+
+#BackG-img
+{
+   background: url("../Images/BackG.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   min-height: 800px;
+}
