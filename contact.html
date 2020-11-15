@@ -8,30 +8,99 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <!--Navbar-->
+    <header>
+        <!--Navbar-->
     <div id="header">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <div class="container">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#" class="navbar-brand"><h3>contact</h3></a>
+                <a href="#" class="navbar-brand"><h3>Bio</h3></a>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="portfolio.html" class="nav-link">content</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </header>
+     <!--ShowCase-->
+     <div id="BackG-img"></div>
+     <!--ShowCase-->
+        <!--Section: Contact-->
+<section class="mb-4">
+
+    <!--SectionHeading-->
+    <h2 class="h1-responsive font-weight-bold text-aling my-1">Contact</h2>
+    <div class="row">
+
+        <!--GridColumn-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--GridRow-->
+                <div class="row">
+
+                    <!--GridColumn-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Name</label>
+                        </div>
+                    </div>
+                    <!--GridColumn-->
+
+                    <!--GridColumn-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--GridColumn-->
+
+                </div>
+                <!--GridRow-->
+
+                <!--GridRow-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--GridRow-->
+
+                <!--GridRow-->
+                <div class="row">
+
+                    <!--GridColumn-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--GridRow-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Submit</a>
+            </div>
+            <div class="status"></div>
         </div>
-      </div>
-    
+    </div>
+
+</section>
 </body>
 </html>
